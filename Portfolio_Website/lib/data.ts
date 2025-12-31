@@ -67,7 +67,7 @@ export const projects: Project[] = [
     id: "infinity-ai",
     title: "InfinityAI - AI Multi-Agent Development Platform",
     description: "Autonomous engineering organization simulation with specialized AI agents for CEO, PM, design, frontend, backend, and QA. Generates complete product deliverables from ideas with iterative refinement and real-time visualization. Reduces development cycles from weeks to hours.",
-    imageUrl: "/infinityai.png",
+    imageUrl: "/Infinityai.png",
     tags: ["Next.js 16", "Python", "FastAPI", "LangChain", "AI Agents", "Vector DB", "Automation"],
     demoUrl: "https://github.com/Aspect022/InfinityAI",
     repoUrl: "https://github.com/Aspect022/InfinityAI#readme",
