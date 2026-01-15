@@ -48,54 +48,64 @@ const achievements = [
     highlights: [], // replaced by live stats
   },
   {
-  id: "achievement-3",
-  title: "AI Prompt Engineer",
-  organization: "Self‑Directed",
-  description:
-    "Mastered the craft of designing, refining, and optimizing prompts to extract maximally accurate, creative, and context‑aware outputs from large language models.",
-  date: "2025",
-  type: "skill",
-  icon: BrainIcon,
-  highlights: [
-    "🧠 Designed 100+ high‑ROI prompts for summarization, code generation, and data analysis",
-    "🔄 Iterated prompt templates to boost model accuracy by 30% in A/B tests",
-    "⚙️ Automated prompt‑tuning workflows via Node.js scripts and LangChain"
-  ]
-},
+    id: "achievement-3",
+    title: "DSU × Tempête – Club Coordinator",
+    organization: "Dayananda Sagar University",
+    description:
+      "Leading technical and departmental events as Club Coordinator, engaging 100+ students in high-impact activities and fostering a collaborative learning environment.",
+    date: "Aug 2024 - Present",
+    type: "leadership",
+    icon: TrophyIcon,
+    highlights: [
+      "Event Coordination",
+      "100+ Student Engagement",
+      "Technical Events",
+      "Departmental Activities"
+    ]
+  },
   {
     id: "achievement-4",
-    title: "Hackthon Participations",
-    organization: "DSU TechFlix - 24Hr Hackathon",
+    title: "Hackathon Participations",
+    organization: "Multiple Competitions",
     description:
-      "Built a full-stack AI applications demonstrating proficiency in modern web technologies and best practices.",
-    date: "April 2025",
+      "Active participant in competitive hackathons, consistently ranking in top positions and demonstrating excellence in rapid prototyping and full-stack development.",
+    date: "2024 - 2025",
     type: "skill",
     icon: StarIcon,
-    highlights: ["React/Next.js", "FastAPI", "MySql", "Cloud Deployment"],
+    highlights: [
+      "1st Place – DASHACK Data Visualization Hackathon (DSU)",
+      "2nd Place – Quizathon, IEEE DSU Student Branch",
+      "TECNOCOGNITION – Certificate of Appreciation ($100 USD)",
+      "Top 15 – 24-Hour Hackathon, TEDxDSU (Apr 2025)"
+    ],
   },
   {
     id: "achievement-5",
     title: "Open Source Contributions",
-    organization: "GitHub Community",
-    description: "Active contributor to open source projects with focus on web development and machine learning tools.",
-    date: "2023 - Present",
+    organization: "Open Source Programs",
+    description: "Active contributor to major open source initiatives, participating in prestigious programs that foster collaboration and innovation in the developer community.",
+    date: "2025 - 2026",
     type: "contribution",
     icon: AwardIcon,
-    highlights: ["GitHub Projects", "Community Engagement", "Code Reviews", "Documentation"],
+    highlights: [
+      "OSI 2025 Open Source Connect India",
+      "Social Winter of Code 2025/2026",
+      "Global Open Source Connect 2026"
+    ],
   },
   {
     id: "achievement-6",
-    title: "Technical Mentorship",
-    organization: "Peer Learning",
+    title: "Research Publications",
+    organization: "Academic Research",
     description:
-      "Guided fellow students and junior developers in web development, Python programming, and project implementation.",
-    date: "2024 - Present",
-    type: "leadership",
-    icon: TrophyIcon,
-    highlights: ["Student Mentoring", "Technical Guidance", "Project Reviews", "Career Advice"],
+      "Contributing to cutting-edge research in AI and healthcare, with focus on neural architectures and medical signal processing for real-world applications.",
+    date: "2025",
+    type: "research",
+    icon: BrainIcon,
+    highlights: [
+      "Lightweight Spiking Neural Architecture with Dynamic Quantization for Real-Time Schizophrenia Screening using Single-Channel EEG (Submitted)"
+    ],
   },
-  
-  
 ]
 
 const typeColors = {
@@ -105,6 +115,7 @@ const typeColors = {
   contribution: "bg-orange-600 hover:bg-orange-700",
   leadership: "bg-amber-600 hover:bg-amber-700",
   profile: "bg-teal-600 hover:bg-teal-700",
+  research: "bg-indigo-600 hover:bg-indigo-700",
 }
 
 const typeLabels = {
@@ -114,6 +125,7 @@ const typeLabels = {
   contribution: "Open Source",
   leadership: "Leadership",
   profile: "Profile",
+  research: "Research",
 }
 export function Achievements() {
   const ref = useRef(null)
@@ -187,7 +199,7 @@ export function Achievements() {
                         className={`${typeColors[achievement.type as keyof typeof typeColors]} text-white border-0 shadow-sm font-medium`}
                       >
                         {typeLabels[achievement.type as keyof typeof typeLabels]}
-                        + </Badge>
+                      </Badge>
                     </div>
                     <CardTitle className="text-xl leading-tight">
                       {achievement.title}
