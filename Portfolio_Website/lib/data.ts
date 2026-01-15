@@ -99,7 +99,7 @@ export const projects: Project[] = [
     id: "finai",
     title: "FinAI - Financial Analytics & Portfolio Management",
     description: "AI-powered financial analytics platform with portfolio management, market analysis, and ML-based investment recommendations. Real-time data processing and comprehensive visualization dashboards. Complete FinTech solution with frontend dashboard and FastAPI backend.",
-    imageUrl: "/FinAI.png",
+    imageUrl: "/finai.png",
     tags: ["FastAPI", "Python", "React", "Machine Learning", "FinTech", "Portfolio Analytics"],
     demoUrl: "https://moneyfyi.vercel.app/dashboard",
     repoUrl: "https://github.com/Aspect022/FinAI#readme",
