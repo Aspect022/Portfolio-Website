@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react"
+import { MailIcon, MapPinIcon } from "lucide-react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
@@ -212,14 +212,6 @@ export function Contact() {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <p className="text-muted-foreground">jayeshrl2005@gmail.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <PhoneIcon className="mr-4 h-5 w-5 text-muted-foreground" />
-                <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <p className="text-muted-foreground">+91 9449945462</p>
                 </div>
               </div>
 
