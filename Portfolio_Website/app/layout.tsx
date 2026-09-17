@@ -21,6 +21,7 @@ const pixelFont = PixelFont({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jayeshrl.vercel.app"),
   title: "Jayesh RL | Full-Stack Developer & AI Engineer",
   description:
     "Passionate Full-Stack Developer and AI Engineer building intelligent, impactful software solutions. Experienced in React, Next.js, Python, FastAPI, and Machine Learning.",
@@ -76,6 +77,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.png",
+  },
+  alternates: {
+    canonical: "https://jayeshrl.vercel.app",
   },
 }
 
