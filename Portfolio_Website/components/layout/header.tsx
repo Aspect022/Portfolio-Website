@@ -55,6 +55,17 @@ export function Header() {
         isScrolled ? "bg-background/90 backdrop-blur-md shadow-sm" : "bg-transparent",
       )}
     >
+      <div className="bg-yellow-300 px-4 py-2 text-right text-xs font-semibold text-black md:px-8 md:text-sm">
+        🚀 This portfolio has been archived. Visit my latest portfolio →{" "}
+        <a
+          href="https://jayeshrl.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-black/80"
+        >
+          https://jayeshrl.vercel.app
+        </a>
+      </div>
       <div className="container flex h-16 items-center justify-between px-4 md:px-8">
         <ScrollLink href="#hero" className="text-xl font-bold transition-colors hover:text-primary">
           Jayesh RL
